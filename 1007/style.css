@@ -1,0 +1,276 @@
+/* 全域設定 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3182C5; /* 外部背景藍色 */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #444;
+}
+
+a {
+    color: #007bb6;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* 主容器 */
+.wrapper {
+    width: 860px;
+    margin: 20px auto;
+    background-color: #3A8FD6;
+    padding: 15px;
+    border: 1px solid #2B72B0;
+}
+
+/* 頂部 Header */
+.header {
+    background-color: #3A8FD6;
+    color: #FFFFFF;
+    padding: 15px 5px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header .slogan {
+    font-size: 10px;
+    margin-top: 3px;
+    opacity: 0.8;
+}
+
+/* Banner 大圖 */
+.banner {
+    width: 100%;
+    height: 280px;
+    border: 4px solid #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 漸層導覽列 */
+.navbar {
+    background: linear-gradient(to bottom, #1178AD, #004D7A);
+    border: 1px solid #003657;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li a {
+    display: block;
+    padding: 10px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    border-right: 1px solid #1C85BB;
+}
+
+.navbar li a.active, .navbar li a:hover {
+    background: linear-gradient(to bottom, #004D7A, #002D47);
+}
+
+/* 三欄特色區 */
+.top-features {
+    background-color: #E8F4F8;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #C4E2F0;
+    margin-bottom: 20px;
+}
+
+.feature-card {
+    width: 30%;
+}
+
+.feature-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.feature-header .icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.feature-header h3 {
+    color: #3182C5;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.feature-card p {
+    line-height: 1.5;
+    color: #555;
+}
+
+/* 中間藍色區域 */
+.middle-section {
+    background-color: #B2DAED;
+    padding: 20px;
+    border: 1px solid #91C7E2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mid-left {
+    width: 58%;
+}
+
+.mid-right {
+    width: 38%;
+}
+
+.middle-section h2 {
+    color: #2369A1;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+/* 團隊 2x2 網格 */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+}
+
+.team-card {
+    width: 48%;
+    display: flex;
+    gap: 8px;
+}
+
+.team-card img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #FFF;
+}
+
+.team-card p {
+    font-size: 11px;
+    line-height: 1.3;
+}
+
+/* 自訂清單 */
+.custom-list {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.custom-list li {
+    padding: 3px 0;
+    font-size: 11px;
+}
+
+.custom-list li::before {
+    content: "> ";
+    color: #2369A1;
+    font-weight: bold;
+}
+
+.custom-list a {
+    color: #2369A1;
+    text-decoration: none;
+}
+
+.custom-list a:hover {
+    text-decoration: underline;
+}
+
+.read-more {
+    display: inline-block;
+    color: #006699;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+/* 底部白色內容區 */
+.bottom-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #CBDCE6;
+    margin-bottom: 15px;
+}
+
+.main-content {
+    width: 65%;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.bottom-section h2 {
+    color: #3182C5;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.main-content p, .sidebar p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.sidebar-img {
+    width: 100%;
+    border: 1px solid #CCC;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+/* 頁尾 Footer */
+.footer {
+    background: linear-gradient(to bottom, #1178AD, #004D7A);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px;
+    font-size: 11px;
+    border: 1px solid #003657;
+}
+
+.footer p {
+    margin: 3px 0;
+}
+
+.footer a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
